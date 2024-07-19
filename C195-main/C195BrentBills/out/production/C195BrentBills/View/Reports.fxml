@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1197.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsController">
+   <children>
+      <Button fx:id="LogOutButton" layoutX="1049.0" layoutY="18.0" mnemonicParsing="false" onAction="#toMainScreen" prefHeight="57.0" prefWidth="128.0" text="Main Screen" />
+      <TableView fx:id="ReportsTable" layoutX="19.0" layoutY="93.0" prefHeight="558.0" prefWidth="1158.0">
+        <columns>
+          <TableColumn fx:id="AppIDCol" prefWidth="105.33333587646484" text="Appointment ID" />
+          <TableColumn fx:id="AppTitleCol" prefWidth="45.666664123535156" text="Title" />
+            <TableColumn fx:id="AppDescCol" prefWidth="109.66667175292969" text="Description" />
+            <TableColumn fx:id="AppLocationCol" prefWidth="96.33332824707031" text="Location" />
+            <TableColumn fx:id="AppContactCol" prefWidth="118.0" text="Contact" />
+            <TableColumn fx:id="AppTypeCol" prefWidth="138.33331298828125" text="Type" />
+            <TableColumn fx:id="AppStartCol" prefWidth="152.66665649414062" text="Start" />
+            <TableColumn fx:id="AppEndCol" prefWidth="143.33331298828125" text="End" />
+            <TableColumn fx:id="AppCustIDCol" prefWidth="107.33331298828125" text="Customer ID" />
+            <TableColumn fx:id="AppUserIDCol" prefWidth="142.33331298828125" text="User ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="12.0" prefHeight="39.0" prefWidth="425.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="524.0" layoutY="665.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
